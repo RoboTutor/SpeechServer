@@ -1,0 +1,12 @@
+D:\Robotutor\SVN\bin\Debug\Messenger.dll
+D:\Robotutor\SVN\bin\Debug\Messenger.pdb
+D:\Robotutor\SVN\Messenger\obj\Debug\Messenger.dll
+D:\Robotutor\SVN\Messenger\obj\Debug\Messenger.pdb
+D:\test\Robotutor\bin\Debug\Messenger.dll
+D:\test\Robotutor\bin\Debug\Messenger.pdb
+D:\test\Robotutor\Messenger\obj\Debug\Messenger.dll
+D:\test\Robotutor\Messenger\obj\Debug\Messenger.pdb
+F:\NAO\RT\bin\Debug\Messenger.dll
+F:\NAO\RT\bin\Debug\Messenger.pdb
+F:\NAO\RT\Messenger\obj\Debug\Messenger.dll
+F:\NAO\RT\Messenger\obj\Debug\Messenger.pdb

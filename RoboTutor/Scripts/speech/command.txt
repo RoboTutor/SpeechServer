@@ -1,0 +1,7 @@
+\pau=500\
+Wat wil je dat ik doe?
+{listen|run}
+\pau=1000\
+{script|speech/command|Wil je meer zien?}
+
+{listen|close}

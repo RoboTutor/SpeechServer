@@ -1,0 +1,9 @@
+D:\Robotutor\SVN\CameraInteractionModule\bin\Release\CameraInteractionModule.dll
+D:\Robotutor\SVN\CameraInteractionModule\bin\Release\CameraInteractionModule.pdb
+D:\Robotutor\SVN\CameraInteractionModule\bin\Release\Messenger.dll
+D:\Robotutor\SVN\CameraInteractionModule\bin\Release\Messenger.pdb
+D:\Robotutor\SVN\CameraInteractionModule\obj\Release\CameraInteractionModule.csprojResolveAssemblyReference.cache
+D:\Robotutor\SVN\CameraInteractionModule\obj\Release\CameraInteractionModule.CameraServer.resources
+D:\Robotutor\SVN\CameraInteractionModule\obj\Release\CameraInteractionModule.csproj.GenerateResource.Cache
+D:\Robotutor\SVN\CameraInteractionModule\obj\Release\CameraInteractionModule.dll
+D:\Robotutor\SVN\CameraInteractionModule\obj\Release\CameraInteractionModule.pdb

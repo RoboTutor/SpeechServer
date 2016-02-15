@@ -1,0 +1,5 @@
+D:\Robotutor\SVN\DashBoard\obj\x86\Release\DashBoard.csprojResolveAssemblyReference.cache
+D:\Robotutor\SVN\DashBoard\obj\x86\Release\DashBoard.ComponentManager.resources
+D:\Robotutor\SVN\DashBoard\obj\x86\Release\DashBoard.Properties.Resources.resources
+D:\Robotutor\SVN\DashBoard\obj\x86\Release\DashBoard.csproj.GenerateResource.Cache
+D:\Robotutor\SVN\DashBoard\bin\Release\DashBoard.exe.config

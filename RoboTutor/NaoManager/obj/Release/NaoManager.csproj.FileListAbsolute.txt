@@ -1,0 +1,4 @@
+D:\Robotutor\SVN\NaoManager\obj\Release\NaoManager.csprojResolveAssemblyReference.cache
+D:\Robotutor\SVN\NaoManager\obj\Release\NaoManager.NaoManagerForm.resources
+D:\Robotutor\SVN\NaoManager\obj\Release\NaoManager.NaoRobotManager.resources
+D:\Robotutor\SVN\NaoManager\obj\Release\NaoManager.csproj.GenerateResource.Cache

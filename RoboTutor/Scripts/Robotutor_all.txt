@@ -1,0 +1,879 @@
+###################################################
+# NB:
+# \pau=\ for delaying for a long time does not work; use multiple \pau=\ and keep each less than 10 seconds.
+# One behavior one Text rule: multiple behaviors will not be bond with text.
+###################################################
+
+# Initialize voice: speed, pitch/tone
+#\rst\
+\rspd=92\
+#\vct=100\
+
+
+
+{mood|6}
+\pau=500\
+# initial standing pose
+{behavior|StandHead}
+\pau=3000\
+
+
+# Enable LegRandomMove
+{idle_leg}
+# {idle_head}
+
+
+
+# Slide 1.
+{behavior|HelloEverybody}
+Welcome everyone! \pau=500\ Good afternoon!
+\pau=200\
+
+{behavior|Intro}
+My name is Robo Tutor. \pau=300\ Today I will be giving a lecture to you.
+
+{behavior|HandOverLeft}
+In this lecture I will present an introduction to robotics. 
+
+{behavior|MeAndYouLeft}
+I will mostly be explaining to you about myself, \pau=300\and my fellow NAO robots.
+
+{behavior|SpreadBoth}
+The goal is to give you a general overview about how we work.
+
+
+# slide 2
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|FirstMe}
+I will start with telling you a few basic things about robotics, and what kind of jobs we might be able to do for you.
+
+{behavior|MeAndYouLeft}
+Then I will use myself as an example to introduce common sensors, and effectors of a robot to you. 
+
+{behavior|PushAside}
+I will also say a few things about, how you can write programs for controlling my behavior.
+
+{behavior|HandOverLeft}
+Finally, I will introduce the robot tutor project, and how the scenario is created. 
+
+{behavior|PointForward}
+Throughout this presentation, I will ask you some quiz questions. So please pay attention.
+\pau=300\
+
+{behavior|HandOver}
+You should all have a turning point clicker. \pau=300\ Please use this to answer the questions I present on the slides.
+
+
+
+# Slide 3 robot family
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+# "is" should be emphasized
+{behavior|Convince}
+The word robot is de-rived from the slavonic word robotnik which means serf.
+{behavior|First}
+It was first used in a science fiction play in 1921. 
+{behavior|Think}
+So the origin of the word robot is a little more than 90 years old.
+{behavior|Me}
+Let me introduce you to some of the more well-known members of my robot family. 
+{behavior|HandOverBoth}
+I will show some more robot relatives of mine on the next slide.
+
+\pau=500\
+{behavior|Balance}
+Manipulators are my most distant family members. They are physically anchored to their workplace. 
+{behavior|PointUpRight}
+At the top left you see a typical assembly robot, the KU-KA manipulator.
+These robots are used to assemble many items, 
+{behavior|FromAToB}
+from cars,
+\pau=500\ 
+to computers.
+{behavior|No}
+{behavior|State}
+They do not have much intelligence, they just do as they are told, in some sort of preprogrammed script.
+
+\pau=500\
+{behavior|HandOver}
+On the left bottom, you see the doctor of the family, Da Vinci.
+{behavior|ConvergeHands}
+He works together with a human doctor or surgeon, to perform many difficult surgeries.
+{behavior|Capisce}
+DaVinci is a high precision robot, which makes surgeries a lot easier for doctors.
+
+\pau=500\
+{behavior|State}
+Next to KU-KA, you see the Ze-bro robot developed at Delft University.
+{behavior|WavyShape}
+Ze-bro is a member of the family of mobile robots, and can move on rough terrain.
+{behavior|Convince}
+It is a very robust robot that can survive a fall of several meters.
+
+\pau=500\
+{behavior|PointFrontDown}
+At the bottom, in the middle, you see a quadcopter, that is a flying member of the mobile robot family.
+{behavior|PushAsideBoth}
+They are commonly used for surveillance.
+
+\pau=500\
+{behavior|ShowSideLeft}
+To the right of Ze-bro you see Honda Asimo, my big brother.
+Asimo is widely known for its abilities to walk up stairs, \pau=300\ jump,
+{behavior|SpreadBoth}
+and perform many jobs around the house.
+{behavior|Balance}
+He also appeared in the movie, Robot and Frank.
+\pau=1000\
+
+{behavior|SpreadLeft}
+At the right bottom, you see a human sitting with a robot.
+{behavior|Think}
+Can you guess which is the robot? 
+\pau=1000\
+They look quite similar, even indistinguishable if they do not move.
+\pau=1000\
+{behavior|State}
+Robots like this are called Geminoid robots.
+
+\pau=500\
+{behavior|ConvergeHands}
+These are just some of the many examples of robots in every day life.
+
+
+
+# Slide 4 why do you need robots
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|RotatingCapisce}
+So originally, we are meant to serve you. But, for what tasks can you put us to good use?
+{behavior|Motivate}
+I probably should make a good case here to convince you, that I am worth the money.
+
+{behavior|YouAndMe}
+Unlike humans, we robots are not affected by fear, and we are able to help with dangerous tasks, that you would rather not.
+{behavior|Propose}
+Take for example the nuclear disaster in Fukushima. 
+{behavior|PointUpRight}
+As you can see at the top left, robots were used to clean up the nuclear waste.
+
+{behavior|HandOver}
+Unlike humans we robots also have no problem, performing repetitive tasks like boxing items,
+{behavior|ConvergeHands}
+and putting things together. For example, 
+\pau=300\
+{behavior|PointUpLeft}
+you can see at the top right, all cars produced today are assembled by robots.
+{behavior|PushAsideBoth}
+In many assembly line tasks, we robots have become more cost effective, than human workers. 
+
+{behavior|PushAsideBoth}
+We are also becoming very effective tools, for gathering information in domains, 
+that are difficult or dangerous for people to access. 
+{behavior|No}
+Without robots, you would not have explored Mars!
+
+And last but not least, we are also
+{behavior|PushAsideBoth}
+becoming more and more able, to assist individuals in performing daily tasks.
+{behavior|SpreadLeft}
+For example, you can buy my relative called the Roomba, to vacuum clean your house. 
+{behavior|Applaud}
+It can even detect filthy areas that need more cleaning.
+
+
+
+# slide 5 what is a robot
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|ConvergeHands}
+Let's now try to define what a robot is.
+\pau=1000\
+
+{behavior|Me}
+As you will have noticed I am a robot. Because I have \rmw=1\legs,  arms\rmw=0\
+{behavior|ShowBody}
+and a body that looks a bit like a human, \pau=500\I am a humanoid robot. 
+Although we most of the time, 
+{behavior|SpreadBoth}
+all will agree on seeing a robot when we see one, providing a definition that we all agree on,
+{behavior|No}
+is not so easy.
+\pau=1000\
+{behavior|Capisce}
+Russell and Norvig define robots as, "physical agents that perform tasks, by manipulating the physical world." 
+To this end, robots are equipped with effectors and sensors.
+
+{behavior|SpreadBoth}
+One of the issues with a typical definition as this one, is that, some appliances that you might think, are not robots, technically are.
+
+{behavior|Think}
+Imagine, for example, your home thermostat. It is a physical agent, also has sensors and effectors, and manipulates temperature in the physical world.
+
+{behavior|PressDown}
+But a thermostat clearly is something very different, from a robot like me!
+\pau=200\
+
+{behavior|PushAsideBoth}
+Up to now, there is no standard definition of robot that satisfies everyone, and many people have their own.
+
+
+
+# Slide 6 How do we work
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|FirstMe}
+From now on, I will take myself as a leading example, to explain to you in more detail 
+{behavior|OneTheOther}
+about robot sensors and effectors.
+I will also tell you something about, creating a program to control me.
+\pau=300\
+{behavior|HandOverBoth}
+I will give you an overview of the most common, and important aspects.
+
+
+
+# slide 7 humanoid nao
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+{behavior|YouAndMe}
+When you see a humanoid robot like me, you must be attracted by my elegant appearance.
+{behavior|SmallBow}
+But in fact, I am a programmable compact electromechanical system, equipped with sensors that capture states of my body, and the world around me.
+
+\pau=400\
+{behavior|ConvergeHands}
+All information gathered by my sensors is then processed,
+{behavior|MeLeft}
+by my processors to decide what to do next.
+{behavior|Capisce}
+Based on this decision, I then use my effectors to manipulate objects, or just move my limbs.
+{behavior|RotatingCapisce}
+To this end, a Linux system was tailored for me, to manage the data from various sensors, and schedule the control of effectors.
+
+A framework called Nao Qi, which is a modular architecture, was designed to enable developers to build customized modules.
+\pau=300\
+{behavior|Me}
+One can also control me using SDK libraries. I will provide details later on.
+
+
+
+# slide 10
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+{behavior|HandOverLeft}
+There are two main methods for controlling me.
+
+{behavior|State}
+One approach is to add a module on my Linux system, which then can be executed after I boot up.
+
+{behavior|RotatingCapisce}
+The other approach is probably more convenient for developers. That is to control me from a remote computer, through Wi Fi or cables. 
+
+{behavior|You}
+As you may know, a typical desktop or laptop computer 
+{behavior|Weigh}
+has more computation power, than I have on board. Therefore, the execution of a complex algorithm
+{behavior|Propose}
+may take significantly more time on me, than on a separate computer. However, you also need to consider that, transmitting data
+{behavior|FromAToB}
+from me, \pau=500\ to a computer, also costs time. For example, images may cost 
+{behavior|Capisce}
+hundreds of milliseconds, before they are transferred to the computer.
+
+Thus, you will always need to make
+{behavior|Weigh}
+a trade off between running a module on me, or on a computer.
+
+
+
+# slide 11
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+# all 
+{behavior|PushAsideBoth}
+All robots need some type of sensors to observe the world around them.
+\pau=200\
+{behavior|OneTheOther}
+Some robots need more sensors than others.
+\pau=200\
+For example, the assembly robot of several slides ago, barely needs any sensors at all.
+{behavior|SpreadLeft}
+Humans however, already have more than 700 sensors.
+{behavior|Tiny} 
+in one square inch of skin.
+\pau=500\
+{behavior|PressDown}
+It also depends on the task. A robotic vehicle that has to navigate, in a complex environment needs many sensors, as you can see on the right of the slide.
+
+
+
+# slide 12
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+{behavior|YouAndMe}
+On the slide you can see what kind of sensors I have myself. I have 98 sensors in total.
+Most of these sensors I need to function properly.
+{behavior|No}
+Do not look down upon the tiny resistors. For example, I have 27 resistors that I use for detecting,
+{behavior|OneTheOther}
+both the current to the motors, and the battery. These current values 
+{behavior|Capisce}
+are also used to, estimate the temperature of my joints and battery.
+{behavior|You}
+Now, I will introduce the more complex ones, in more details to you.
+
+
+
+# slide 13 
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+# joints position sensor
+{behavior|ShowBiceps}
+The position sensors are the most frequently used sensors inside my body. 
+{behavior|RotatingCapisce}
+They are used to detect the angles of the joint rotation.
+The sensor detects the angular position of the permanent magnet.
+{behavior|PointUpRight}
+The top right picture illustrates a wheel, with two equally spaced magnets. The voltage from the sensor, will peak twice for each revolution.
+
+
+
+# slide 14 pressure sensor
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+{behavior|State}
+The force sensor utilizes a material, whose resistance changes, when a force or pressure is applied. I need them to check 
+{behavior|PushAside}
+whether my feet are positioned correctly. They can be used to determine, 
+{behavior|Balance}
+whether I am balanced when I move my legs, and whether I am falling down. 
+This information is also used during the walk.
+{behavior|SpreadLeft}
+At least one foot, must maintain contact with the ground, otherwise I will stop walking.
+
+
+
+# slide 15 tactile
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+# tactile
+{behavior|ShowMicLeft}
+There are tactile sensors on my head and hands, to detect if someone is touching me.
+{behavior|Balance}
+The bumpers on the front of my feet, act as collision sensors, to check if I bumped into something.
+
+
+
+# slide 16
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+# inertial and gyro sensors
+{behavior|Me}
+I have inertial sensors that can track my position in real time based on the detected acceleration of my body. 
+
+The gyro sensors provide me information about my orientation. 
+{behavior|State}
+Thus, I can determine my next step using this information.
+Since these sensors are sensitive to acceleration, they are also used to detect whether I am falling down.
+
+
+
+# slide 17 sonar
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+# sonar
+{behavior|ShowChest}
+{behavior|YouAndMe}
+On my chest, I have two sets of sonar sensors to approximate the distance, between me and objects in front of me, and to roughly estimate the position of the objects, 
+as you can see in the pictures, on the bottom of the slide.
+{behavior|HandOver}
+The sensor contains an emitter, which sends out the ultrasonic wave, and a receiver,
+{behavior|Me}
+which receives the ultrasonic wave, rebound from obstacles.
+
+
+
+# slide 18 microphone
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+Like how you use your ears to listen,
+{behavior|ShowMic}
+I have 4 microphones located on my head to do the same. I can determine whether  
+{behavior|OneTheOther}
+the words I hear match the words I expect, and localize the sound source.
+{behavior|HandOver}
+As you can see the in the picture at the bottom, 
+{behavior|RotatingCapisce}
+the different distances that the sound waves need to travel, induce time differences of arrival, which are measured and used to compute the current position of the source.
+
+
+
+# slide 19 camera
+{behavior|Twinkle}
+{slide}
+\pau=1000\ 
+
+# camera
+{behavior|YouAndMe}
+Similarly to how you use your eyes to see, I use two cameras which I can use to see you.
+
+Although the resolution of 
+{behavior|MeAndYou}
+my eyes is much less than your eyes, I can still recognize many things, with the help of computer vision algorithms.
+
+However, the field of view of my cameras 
+{behavior|No}
+does not overlap, so 3D vision algorithms cannot be applied to me directly.
+ 
+{behavior|State}
+Fortunately, my developers have invented a method for stereo vision, by using two images, 
+{behavior|LookAround}
+taken at different perspectives, by one of my cameras.
+\pau=1000\
+
+# photo
+{behavior|First}
+Now, I will take a photo of you, using the camera on my forehead, and put it on the slide, to show, how my camera works.
+
+# head pose for taking a photo
+{behavior|PhotoHeadPose}
+It takes some time, to create the slide.
+\pau=1000\
+
+# Take a photo
+{camera}
+\pau=3000\
+
+# head pose back
+{behavior|StandHead}
+Almost done.
+\pau=2000\
+
+{slide}
+\pau=1000\
+
+{behavior|You}
+You there, \pau=300\ you weren't sleeping, were you?
+\pau=2000\
+
+#=========================================================================================
+
+{mood|-6}
+\pau=500\
+# initial standing pose
+{behavior|StandHead}
+\pau=3000\
+
+# Slide 18 Overview
+{behavior|PushAsideBoth}
+In the first part, I introduced some basic concepts of robots, and sensors.
+{behavior|FirstMe}
+Now I will talk about effectors, programming, and applications.
+
+
+
+# slide 19 Processor
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|YouAndMe}
+Sensors give you, and me, a lot of information about our surroundings, 
+{behavior|State}
+but we need to determine, what we do with this information. I think the rules that
+{behavior|FromAToB} 
+map input,
+\pau=500\
+to output, have been discussed previously during the course. 
+{behavior|Propose}
+In a robot, the hardware that does this mapping is called, the processing unit.
+{behavior|Convince}
+Processing units are helpful for determining states in the world, 
+for example, my exact location and how I should navigate through a map,
+{behavior|FromAToB}
+to get from one point to another.
+\pau=500\
+{behavior|RotatingCapisce}
+Processing units also help me understand, the images I receive from my cameras, to detect things like faces and objects nearby.
+Or for example sensor fusion, which combines the input
+{behavior|FromAToB}
+from a gyroscope, accelerometer and compass, into a single and better orientation value. 
+which helps me determine where I am, and how I am moving.
+
+
+
+# slide 20 Effectors
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+When the processing unit has
+{behavior|OneTheOther}
+processed the input, a decision follows, which would usually mean.
+{behavior|Clap}
+I have to move parts of my body. This is done using effectors.
+{behavior|Propose}
+{behavior|Balance}
+An effector is basically anything to manipulate our world, for example my arms, my legs, and my speakers, etcetera.
+{behavior|PushAsideBoth}
+Let's have a short look at what I can actually do with effectors.
+
+
+
+# Slide 21 Head
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|HandOver}
+A head is probably, the most important part for humanoids. For me, despite that many important electronic components,
+{behavior|ShowMic}
+ are inside my head. its movements also help me 
+{behavior|LookAround}
+to track objects that interest me.
+My gaze direction also indicates my attention.
+Of course, head movements are essential to some gestures like
+{behavior|Nod}
+nodding and shaking head, and to dance.
+The lights in my eyes are also useful, 
+# show blue, red
+{behavior|Twinkle}
+for showing emotions.
+\pau=2000\
+
+
+
+# Slide 22 arms
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Me}
+One of my important effectors, is my arm. 
+{behavior|Capisce}
+Although, I only have three fingers for each hand, I can still grab objects. 
+{behavior|RotatingCapisce}
+I can use my arms to make gestures, as well.
+When I need to stand up, from a sitting posture, my arms also help me to support my body.
+{behavior|Clap}
+And, arms are necessary for entertainment like soccer, dance, and games.
+
+
+
+# Slide 23 leg
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Propose}
+Legs are a representative feature for biped robots like me. 
+
+{behavior|LeanRight}
+They support our body, enable us to stand, walk, and jump.
+
+{behavior|Propose}
+Legs have advantages in walking over complex terrains, where wheels can be easily stuck, 
+{behavior|HandOver}
+for example, ruins caused by disasters.
+
+{behavior|Spread}
+However, compared to wheels, it is not easy to control my move accurately. 
+This is caused by the backlash of my joints, and the slippage of my feet.
+{behavior|HandOver}
+As you might notice, I have been already standing at 
+{behavior|OneTheOther}
+a different position, from where I started the lecture, although my leg movements were small.
+{behavior|SpreadBoth}
+As a result, it is difficult to control me to walk in a straight line.
+
+{behavior|PushAsideLeft}
+Legs are also important for entertainment.
+
+Look at me! I am going to show you how I can stand on one leg, and, kick.
+
+{behavior|Kick}
+\pau=11000\
+
+{behavior|StandHead}
+\pau=500\
+
+If my friends were here, 
+{behavior|Applaud}
+I could even play soccer or dance with them.
+\pau=500\
+
+
+
+# Slide 24 - ZMP Support Polygon
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Balance}
+Balence is a key aspect to the locomotion of bi-ped robots.
+{behavior|MeAndYou}
+Let me introduce to you, some basic concepts of controlling my balance.
+
+{behavior|Capisce}
+The Zero Moment Point, Z M P, is the point on the robot feets, where the moments acting on the robot
+{behavior|Weigh}
+are balanced by an opposing moment from the ground. 
+{behavior|State}
+If the Z M P, is at the edge of the foot area, or beyond it, the foot will tip over, and likely fall. 
+
+
+{behavior|HandOver}
+To be simple, the support polygon of a robot is, the convex hull of the footprints on the ground.
+
+{behavior|ConvergeHands}
+Under zero acceleration conditions, to keep the Z M P within the foot area, the center of mass of the robot body, 
+should be kept inside the support polygon,
+{behavior|Capisce}
+and if so, the robot will not rotate about the edges of the foot,
+{behavior|ShowBody}
+and will remain upright.
+\pau=1000\
+
+
+
+# Slide 25 - ZMP Support Polygon
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+In this slide, I will talk about balance during walking.
+{behavior|Propose}
+When I am walking, I select the next step very carefully.
+to guarantee the Z M P of my body always inside the support polygon. 
+
+Let me show you how I walk. Please look at me.
+{behavior|Walk}
+
+\pau=2000\
+
+{behavior|Capisce}
+As you can see, my steps are small, and unlike a human.
+\pau=1500\
+
+{behavior|HandOverLeft}
+More sophisticated walking style requires more complex algorithms, to keep the Z M P inside the support polygon.
+{behavior|ProposeLeft}
+One method is to model the locomotion of each leg, as an inverted pendulum cart, since most of the mass, 
+{behavior|ShowBody}
+aggregates in my upper body.
+\pau=800\
+{behavior|Capisce}
+A widely used model is linear inverted pendulum mode, which constrains the motion of my body to the X Y plane.
+{behavior|ConvergeHands}
+Achieving position control of legs while making sure that, the Z M P is inside the foot area,
+{behavior|SpreadBoth}
+is a whole research field on its own, so I will not provide further details in this lecture.
+
+# summary
+{behavior|Clap}
+This is just what I can do with my effectors though, there are even robots that can juggle, or play ping pong.
+{behavior|No}
+but I can not react fast enough.
+{behavior|PushAsideBoth}
+As you see, motors are not the only effectors that exist, but for me and most robots,
+{behavior|ShowBiceps}
+they are the most important ones, as they are essential to the movements of my body.
+
+
+
+# Slide 26 - DOF
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|YouAndMe}
+Your arms and mine too, are limited by what we call degrees of freedom.
+{behavior|Capisce}
+A free object has six degrees of freedom, three for moving, and three for rotation.
+{behavior|Convince}
+A linkage, like my arm, is formed by several bars connected by joints.
+{behavior|HandOverLeft}
+Joitns reduce degrees of freedom, because the bars cannot move freely anymore. 
+They can only rotate around the joints. Take your wrist for example.
+{behavior|LRUD}
+You can rotate it up and down, left and right, and twist it, giving it three degrees of freedom.
+{behavior|No}
+My arm has even less degrees of freedom, because only some joints can rotate around three axes.
+{behavior|CapisceLeft}
+Some of my joints, like the three fingers of my hand, are controlled 
+{behavior|Tiny}
+by only one motor, so it only has one degree of freedom.
+
+
+
+# Slide 27  DOF of NAO arm 
+{slide}
+\pau=500\
+
+{behavior|State}
+Similarly, my arm has a total of 6 degrees of freedom.
+\pau=1000\
+
+# better words?
+{behavior|ShowArmJointsOneByOne}
+Since my shoulder, can pitch, and, roll. \pau=1500\ my elbow, can roll, \pau=500\ and yaw. \pau=1500\ my wrist, can only yaw. \pau=1200\ and I have told you my fingers only have one degree. 
+\pau=500\
+
+
+
+# Slide 28 Programming
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Clap}
+Now we have seen what I can do, with my sensors and effectors, 
+{behavior|Me}
+let me give you a brief introduction to how you can program me.
+{behavior|SpreadBoth}
+Choregraphe is an excellent graph-flow based programming tool shipped with me. 
+{behavior|FromAToB}
+You can drag boxes from libraries, and connect them to create your projects, as you can see on the right of the slide.
+{behavior|Propose}
+This type of programming is also called visual programming.
+{behavior|OneTheOther}
+Sometimes, you may need to change the code behind the boxes, or create your own boxes.
+{behavior|HandOver}
+You can use Python to code these boxes. Projects can be executed on a computer, and on the robot.
+{behavior|PointRight}
+Sometimes, actions you create might cause me to fall down. 
+It is therefore very useful that, there are also simulators available for a try-out.
+
+  
+
+# Slide 29 
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|PushAsideBoth}
+A-P-I's to the A L modules, provided with Nao Qi framework, are available for customized applications.
+
+{behavior|State}
+This slide shows an example, of text to speech module.
+
+{behavior|HandOver}
+You can also use, various programming languages, including c plus plus, java,
+
+# Slide 30
+{slide}
+\pau=500\
+
+c sharp, and even matlab to create your applications. They are all supported by our SDK libraries now.
+{behavior|Propose}
+However, only c plus plus and python, are supported by the Linux system on the robot.
+
+
+
+# Slide 31 Robotutor
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Me}
+Finally, I will briefly introduce the Robo Tutor project. 
+\pau=500\
+
+{behavior|First}
+Thanks to the script engine, that is part of my system,
+{behavior|SpreadBoth}
+many different scenarios can be designed for me to perform.
+
+{behavior|YouAndMe}
+Right now, I am a robot tutor, teaching you about robotics. However, I can also act in a theater, using the same system.
+
+{behavior|Spread}
+As you can see on the left bottom of the slide, the script is very intuitive.
+
+{behavior|Propose}
+With such a script, you can easily orchestrate my speech, actions, slide control, et cetera.
+{behavior|SpreadBoth}
+But don't forget, I also need behaviors that need to be created, 
+{behavior|Weigh}
+and synchronized with my speech, and the other actions that I perform. 
+{behavior|ProposeLeft}
+There are several concurrent threads, that need to be managed!
+
+{behavior|OneTheOther}
+Scripts can be stored both on a computer or in my system, 
+{behavior|Me}
+and I can act using a script in my system, 
+{behavior|PushAside}
+without another computer.
+
+However, at least for now, a computer 
+{behavior|Propose}
+is required for the slides and quizzes. 
+{behavior|Clap}
+Thanks to the turning point technology, I can check,
+{behavior|YouAndMe}
+how well you understood the content I just taught, 
+{behavior|HandOver}
+and provide more explanation on things, that were not clear.
+
+{behavior|State}
+My voice can also be transferred to a computer, and amplified, using the classroom speakers.
+
+{behavior|ShowBody}
+I am still growing. More and more functions will be added to me.
+{behavior|Applaud}
+Plans are for me to interact more and, for example, answer open questions that students ask directly, using a question-answer system.
+{behavior|YouAndMe}
+If you are interested in this project, please contact my boss, Koen Hindriks.
+
+
+
+# Last Slide 32
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Spread}
+Alright, that was all.
+
+{behavior|Bow}
+Thank you for your attention and I hope you enjoyed my lecture.
+\pau=1500\
+{behavior|HelloEverybody}
+I will now let Junchao to continue with the lecture. Goodbye!
+
+
+
+

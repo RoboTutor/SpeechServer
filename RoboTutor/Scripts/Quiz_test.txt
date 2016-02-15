@@ -1,0 +1,3 @@
+Laten we eens kijken wat jullie dachten.
+{quiz|Ik heb jullie verteld dat Zeebro een robot is|Dat is heel goed|Je denkt misschien dat een afwasmachine geen robot is maar een afwasmachine maakt de afwas schoon en stopt als hij waar neemt dat er iets fout gaat|De Mars Rover is echt wel een robot! | Jullie vonden het best een moeilijke vraag he? }
+{behavior|Twinkle}

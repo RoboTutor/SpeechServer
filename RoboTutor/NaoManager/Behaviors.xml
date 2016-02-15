@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NaoBehaviors>
+  <CrgBehaviors>
+    <CrgBehavior>Wink</CrgBehavior>
+    <CrgBehavior>Blink</CrgBehavior>
+    <CrgBehavior>Kick</CrgBehavior>
+    <CrgBehavior>Pushups</CrgBehavior>
+    <CrgBehavior>Akimbo</CrgBehavior>
+    <CrgBehavior>tacint_nosay</CrgBehavior>
+    <CrgBehavior>Twinkle</CrgBehavior>
+    <CrgBehavior>GangnamLong</CrgBehavior>
+    <CrgBehavior>Macarena</CrgBehavior>
+    <CrgBehavior>EyesOn</CrgBehavior>
+    <CrgBehavior>AllOff</CrgBehavior>
+    <CrgBehavior>AllOn</CrgBehavior>
+    <CrgBehavior>EyesOff</CrgBehavior>
+    <CrgBehavior>RandomEyes</CrgBehavior>
+  </CrgBehaviors>
+  <ParameterizedBehaviors>
+  </ParameterizedBehaviors>
+</NaoBehaviors>

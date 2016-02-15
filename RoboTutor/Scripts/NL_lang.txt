@@ -1,0 +1,442 @@
+###################################################
+# NB:
+# \pau=\ for delaying for a long time does not work; use multiple \pau=\ and keep each less than 10 seconds.
+# One behavior one Text rule: multiple behaviors will not be bond with text.
+###################################################
+
+# Initialize voice: speed, pitch/tone
+#\rst\
+\rspd=95\
+#\vct=100\
+# Enable LegRandomMove
+#{idle_leg}
+#{idle_head}
+
+# initial standing pose
+{behavior|StandHead}
+\pau=3000\
+
+{idle_leg}
+
+{behavior|Twinkle}
+{behavior|AllOn}
+\pau=1000\
+{behavior|AllOn}
+
+# Slide 1 Welkom
+{behavior|HelloEverybody}
+Hallo allemaal! \pau=500\
+Hoe gaat het met jullie ? \pau=200\
+
+{behavior|Intro}
+Fijn dat jullie er allemaal zijn! \pau=500\
+Mij naam is Robo Tutor.
+
+{behavior|HandOverLeft}
+Ik zal jullie vandaag iets vertellen over robots.
+
+{behavior|MeAndYouLeft}
+Ik zal vooral iets vertellen over mijzelf. \pau=300\
+Ik ben een Nao robot.\pau=300\
+
+{behavior|SpreadBoth}
+Ik heb heel veel broertjes en zusjes die er bijna net zo uit zien als ik. \pau=500\
+Ik zal jullie wat vertellen over hoe ik beweeg, en wat ik allemaal kan.
+
+\pau=2000\
+
+# Slide 2 Overzicht
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\
+
+{behavior|FirstMe}
+Ik zal eerst vertellen wat voor soort robots er allemaal zijn, en hoe robots mensen kunnen helpen.
+
+{behavior|MeAndYouLeft}
+Ik zal daarna wat meer vertellen over hoe ik zelf dingen kan zien, horen, en voelen.
+ 
+{behavior|PushAside}
+Ik ga jullie ook vertellen wat ik allemaal kan, en hoe je een programma kan maken dat mij dingen laat doen.
+
+{behavior|PointForward}
+Ik ga jullie ook een vraag over robots stellen. 
+Dus let goed op he?
+
+\pau=300\
+{behavior|HandOver}
+Je hebt een clicker gekregen.
+\pau=300\
+Het is de bedoeling dat je die gebruikt om de vraag te beantwoorden.
+
+# Slide 3 Heel veel robots
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\
+
+
+{behavior|Me}
+Ik zal jullie eerst wat vertellen over mijn familie. Er zijn heel veel soorten robots.
+
+\pau=500\
+{behavior|Balance}
+Je kunt plaatjes van arm robots zien aan de linkerkant. Die zitten aan de grond vast en zijn eigenlijk een soort van een arm. 
+\pau=300\
+Dit is verre familie van mij, maar lijkt niet op mij.
+{behavior|PointUpRight}
+Sommige arm robots kun je in fabrieken vinden, zoals de KUKA robot die je linksboven ziet.
+{behavior|FromAToB}
+Dit soort robots maken bijvoorbeeld au toos en computers in een fabriek.
+{behavior|No}
+{behavior|State}
+Ze kunnen vaak maar 1 soort kunsje.
+
+\pau=500\
+{behavior|HandOver}
+De robot linksonder heet Da Vinci. Hij is de dokter in de robot familie.
+{behavior|ConvergeHands}
+Samen met een echte dokter kan hij operaties uitvoeren.
+{behavior|Capisce}
+Hij doet dat niet alleen hoor maar helpt de echte dokter!
+
+\pau=500\
+{behavior|State}
+De robot boven in het midden heet Zeebro. Hij is gemaakt op de universiteit in Delft.
+{behavior|WavyShape}
+Zeebro kan bewegen en kan goed over obstakels heenklimmen.
+{behavior|Convince}
+Hij is ook heel sterk en gaat niet stuk als hij van een paar meter hoog valt.
+
+\pau=500\
+{behavior|PointFrontDown}
+In het midden beneden zie je een robot die kan vliegen. Zoon robot noemen we kwadkopter.
+{behavior|PushAsideBoth}
+Ze kunnen vanuit de lucht kijken wat er op de grond gebeurt.
+
+\pau=500\
+{behavior|ShowSideLeft}
+Mijn grote broer zie je rechtsboven. Hij heet Asimo.
+Asimo kan zelfs een trap oplopen. Dat vind ik heel knap !
+\pau=300\
+{behavior|SpreadBoth}
+{behavior|Balance}
+Hij is ook een fillum ster. Hij deed mee in de fillum Robot en Frank.
+\pau=1000\
+
+{behavior|SpreadLeft}
+Helemaal rechtsonder zie je een mens en een robot naast elkaar zitten.
+{behavior|Think}
+Zie jij wie van de twee de robot is ? 
+\pau=1000\
+Ze lijken heel erg op elkaar, he?
+\pau=1000\
+{behavior|State}
+
+\pau=500\
+{behavior|ConvergeHands}
+Er zijn nog veel meer soorten robots hoor !
+
+# Slide 4 Waarom zijn er robots
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\
+
+{behavior|RotatingCapisce}
+Robots worden gemaakt omdat ze mensen kunnen helpen. Maar wat kunnen we dan allemaal voor jullie doen?
+{behavior|Motivate}
+Ik zal het jullie proberen uit te leggen.
+{behavior|YouAndMe}
+Robots zijn nooit bang en daarom kunnen wij dingen doen die mensen liever niet doen.
+{behavior|Propose}
+In gevaarlijke situaties kunnen wij bijvoorbeeld de rommel opruimen. 
+{behavior|HandOver}
+We vinden ook nooit iets saai worden.
+{behavior|ConvergeHands}
+We vinden het daarom ook niet erg om telkens dezelfde auto in elkaar te zetten.
+{behavior|PushAsideBoth}
+We vragen er ook geen geld voor om dat te doen. 
+{behavior|PushAsideBoth}
+Wij kunnen ook op sommige plekken komen waar mensen eigenlijk niet kunnen leven. 
+{behavior|No}
+We kunnen bijvoorbeeld verre planeten zoals Mars verkennen. De Mars Rover robot rijdt nu rond op Mars!
+# more and more
+We worden ook steeds beter in het helpen met huishoudklusjes.
+{behavior|PushAsideBoth}
+Zulke klussen vinden jullie vaak vervelend.
+{behavior|SpreadLeft}
+De Roomba robot kan bijvoorbeeld het huis stofzuigen.
+{behavior|Applaud}
+Roomba kan zelf bepalen of er iets schoon moet worden gemaakt.
+
+# Slide 5 Wat is een robot eigenlijk
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\
+
+{behavior|ConvergeHands}
+We hebben al heel wat robots gezien. Maar wat is een robot nu eigenlijk?
+\pau=1000\
+
+{behavior|Me}
+Ik heb benen en armen
+{behavior|ShowBody}
+En lijk een beetje op een mens\pau=500\.
+Maar niet alle robots zien er zo uit.
+{behavior|SpreadBoth}
+Het is niet altijd makkelijk om te zeggen of iets een robot is of niet.
+{behavior|No}
+\pau=1000\
+{behavior|Capisce}
+Een robot is in ieder geval een apparaat dat dingen kan doen.
+Een robot kan ook dingen waar nemen omdat hij sensoren heeft.
+\pau=1000\
+{behavior|Capisce}
+Als je dat niet kan, dan ben je geen robot.
+
+# Slide 6 Welke is geen robot
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\
+
+{behavior|Balance}
+Nu heb ik een vraag voor jullie.
+{behavior|State}
+\pau=500\
+Ik heb net uitgelegd wat een robot is.
+\pau=500\
+Welke van de apparaten is geen robot?
+\pau=500\
+Als je denkt dat Zeebro geen robot is, dan druk je zo meteen A op je clicker.
+\pau=500\
+Als je denkt dat een stofzuiger geen robot is, dan druk je zo meteen B op je clicker.
+\pau=500\
+Als je denkt dat een afwasmachine geen robot is, dan druk je zo meteen C op je clicker.
+\pau=500\
+Als je denkt dat de Mars Rover geen robot is, dan druk je zo meteen D op je clicker.
+\pau=500\
+Ik geef je nu 15 seconden om een antwoord te geven op de vraag.
+
+{behavior|LookAround}
+
+# Slide 6 - Start timer
+{slide}
+
+{behavior|LookAround}
+
+# Wait for 15 seconds.
+\pau=5000\
+\pau=5000\
+\pau=5000\
+
+# Slide 6 - Get results
+{slide}
+
+\pau=2000\
+# Hackfix to trigger the turningpoint choice command.
+# last is a tie
+Laten we eens kijken wat jullie dachten.
+{quiz|Ik heb jullie verteld dat Zeebro een robot is|Dat is heel goed|Je denkt misschien dat een afwasmachine geen robot is maar een afwasmachine maakt de afwas schoon en stopt als hij waar neemt dat er iets fout gaat|De Mars Rover is echt wel een robot! | Jullie vonden het best een moeilijke vraag he? }
+
+# Slide 6 - Show correct answer
+{slide}
+\pau=500\
+{behavior|HandOver}
+Het juiste antwoord is de stofzuiger.
+{behavior|Weigh}
+De meeste stofzuigers kunnen niets waar nemen. De Roomba robot is een uitzondering!
+
+# Slide 7 Sensoren
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\ 
+
+# all 
+{behavior|PushAsideBoth}
+Robots gebruiken sensoren om iets te zien in de wereld.
+\pau=200\
+{behavior|SpreadLeft}
+Mensen kunnen dingen zien met hun ogen of iets horen met hun oren.
+{behavior|Tiny} 
+En ze kunnen iets voelen door het aan te raken.
+\pau=500\
+{behavior|PressDown}
+Een robot heeft een camera om mee te kijken en een microfoon om mee te horen.
+Een robot zou ook de temperatuur kunnen meten met een ingebouwde thermometer.
+
+# Slide 8 Camera
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\ 
+
+# camera
+{behavior|YouAndMe}
+Ik heb twee cameras waarmee ik kan kijken, maar die zitten niet in mijn ogen.
+{behavior|MeAndYou}
+Op het plaatje kun je zien waar mijn cameras zitten.
+Ik zie wel minder goed met mijn cameras dan jullie en vindt dat nog heel moeilijk.
+{behavior|No}
+Ik kan nog niet alles herkennen wat jullie wel kunnen zien.
+ 
+{behavior|State}
+Ik kan ook fotoos maken met mijn camera.
+{behavior|LookAround}
+\pau=1000\
+
+# photo
+{behavior|First}
+Ik zal nu een foto van jullie maken en die aan jullie laten zien.
+
+# head pose for taking a photo
+{behavior|PhotoHeadPose}
+Dat kost een beetje tijd, hebben jullie heel even geduld?
+\pau=1000\
+
+# Take a photo
+{camera}
+\pau=5000\
+
+# head pose back
+{behavior|StandHead}
+Al weer bijna klaar hoor.
+
+{slide}
+\pau=1000\
+
+{behavior|You}
+Hier istie dan. Zie je jezelf op mijn foto?
+\pau=5000\
+
+# Slide 9 Wat kan ik allemaal
+{slide}
+\pau=1000\
+{behavior|HelloEverybody}
+Ik ga nu iets vertellen over wat ik kan.
+
+# Slide 10 Hoofd
+{behavior|Twinkle}
+
+{slide}
+\pau=1000\
+
+{behavior|HandOver}
+Ik kan mijn hoofd bewegen.
+{behavior|ShowMic}
+Ik kan kijken naar iets wat geluid maakt.
+{behavior|LookAround}
+Ik kan zelfs dansen.
+{behavior|Nod}
+# show blue, red
+Ik kan ook licht geven met mijn ogen.
+{behavior|RandomEyes}
+\pau=1000\
+
+# Slide 11 Armen
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\
+
+{behavior|Me}
+Met mijn hand kan ik dingen pakken. 
+{behavior|Capisce}
+Ik heb maar drie vingers en daarom is iets pakken een beetje moeilijker dan voor jullie. 
+{behavior|RotatingCapisce}
+Ik kan gebaren maken met mijn armen.
+Met mijn armen kan ik ook kiepen bij voetbal. Heb je mij wel eens zien voetballen?
+{behavior|Clap}
+
+# Slide 12 Benen
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\
+
+{behavior|Propose}
+Ik kan op twee benen staan net als jullie.
+
+{behavior|LeanRight}
+Ik kan er mee lopen.
+
+{behavior|Propose}
+Ik kan er een bal mee schieten.
+{behavior|HandOver}
+
+{behavior|Spread}
+Maar lopen vind ik ook best moeilijk hoor. De trap op lopen vind ik echt heel moeilijk.
+Soms glij ik ook uit en dan val ik.
+{behavior|HandOver}
+Maar ik kan wel op 1 been staan!
+
+{behavior|PushAsideLeft}
+
+Kijk maar eens dan doe ik het voor.
+{behavior|Kick}
+
+\pau=10000\
+
+{behavior|Applaud}
+\pau=500\
+
+# Slide 13 Hoe programmeer je een robot
+{behavior|HelloEverybody}
+{slide}
+Wat ik doe, doe ik omdat ik een programma uitvoer.
+\pau=200\
+
+{behavior|FirstMe}
+Ik zal jullie een klein beetje vertellen over hoe dat werkt.
+
+# Slide 14 Wireless
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\ 
+
+{behavior|HandOverLeft}
+Een computer kan mij instrukties geven via WiFi.
+
+{behavior|State}
+
+{behavior|RotatingCapisce}
+Dat is makkelijker dan een computer via een kabel aan mij vastmaken. 
+
+{behavior|You}
+Zelf kan ik ook wel rekenen hoor.
+{behavior|Weigh}
+Maar niet zo goed als een grote computer.
+{behavior|Propose}
+Die past niet in mijn hoofd.
+{behavior|FromAToB}
+
+# Slide 15 Programmeren
+{behavior|Twinkle}
+{behavior|AllOn}
+{slide}
+\pau=1000\
+{behavior|Clap}
+Een makkelijke manier om mij instrukties te geven werkt met blokjes.
+{behavior|Me}
+Elk blokje is een aparte instruktie die ik kan uitvoeren.
+{behavior|SpreadBoth}
+Je kunt die blokjes achter elkaar plakken.
+{behavior|FromAToB}
+We hebben al wat leuke instrukties voor jullie gemaakt waarmee je mij kunt programmeren.
+{behavior|Propose}
+Dat kun je zometeen uitproberen.
+{behavior|OneTheOther}
+{behavior|HandOver}
+Als je alle instrukties aan elkaar geplakt hebt, dan kan ik ze voor je uitvoeren.
+{behavior|PointRight}
+Maar laat me niet teveel bewegen he ?, dan val ik om!
+# Slide 16 Einde
+{behavior|ShowBody}
+{slide}
+Ik ben aan het einde van mijn verhaal. Dat was het al weer. Ik hoop dat je het leuk vond.
+{behavior|Applaud}

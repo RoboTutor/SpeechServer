@@ -1,0 +1,7 @@
+F:\NAO\RT\SpeechClient\obj\x86\Debug\SpeechClient.SpeechClientForm.resources
+F:\NAO\RT\SpeechClient\obj\x86\Debug\SpeechClient.Properties.Resources.resources
+F:\NAO\RT\SpeechClient\obj\x86\Debug\SpeechClient.csproj.GenerateResource.Cache
+F:\NAO\RT\SpeechClient\bin\Debug\SpeechClient.exe
+F:\NAO\RT\SpeechClient\bin\Debug\SpeechClient.pdb
+F:\NAO\RT\SpeechClient\obj\x86\Debug\SpeechClient.exe
+F:\NAO\RT\SpeechClient\obj\x86\Debug\SpeechClient.pdb

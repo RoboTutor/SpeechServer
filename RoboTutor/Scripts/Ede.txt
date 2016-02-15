@@ -1,0 +1,41 @@
+###################################################
+# NB:
+# \pau=\ for delaying for a long time does not work; use multiple \pau=\ and keep each less than 10 seconds.
+# One behavior one Text rule: multiple behaviors will not be bond with text.
+###################################################
+
+# Initialize voice: speed, pitch/tone
+#\rst\
+\rspd=95\
+#\vct=100\
+# Enable LegRandomMove
+#{idle_leg}
+#{idle_head}
+
+# initial standing pose
+{behavior|StandHead}
+\pau=1000\
+
+{idle_leg}
+
+{behavior|AllOn}
+
+{behavior|HelloEverybody}
+Hallo ziekenhuis Gelderse vallei!
+
+{behavior|SpreadBoth}
+Ik ben Charlie \pau=100\ en ik kom binnenkort in jullie ziekenhuis werken.
+
+{behavior|SpreadLeft}
+Ik ben een maatje van de patiënt.
+
+{behavior|HandOver}
+en \pau=100\ een hulpje voor jou.
+
+{behavior|Balance}
+Ik pas me razendsnel aan.
+
+Dus neem me op in jullie beleidsplan. \pau=200\
+
+{behavior|Bow}
+Tot ziens in Ede!

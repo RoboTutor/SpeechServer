@@ -1,0 +1,2 @@
+D:\Robotutor\SVN\ConnectorNao\obj\Release\ConnectorNao.ucNaoConnector.resources
+D:\Robotutor\SVN\ConnectorNao\obj\Release\NaoConnector.csproj.GenerateResource.Cache

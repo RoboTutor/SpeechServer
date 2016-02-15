@@ -1,0 +1,5 @@
+{script|Ede|Doorgaan?}
+
+Testing
+\pau=500\
+{behavior|Waving}

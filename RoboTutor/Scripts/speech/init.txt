@@ -1,0 +1,25 @@
+\rspd=95\
+#\vct=100\
+
+# initial standing pose
+{behavior|StandHead}
+\pau=1000\
+
+{behavior|AllOn}
+
+{behavior|HelloEverybody}
+Mijn naam is NAO. Ik kan leuke dingen doen.
+
+{listen|connect}
+{script|speech/command|Weet je al wat ik kan doen?}
+
+Ik kan opstaan en zitten.
+\pau=200\
+Voetballen heb ik ook geleerd.
+\pau=200\
+In mijn vrije tijd werk ik aan mijn spieren.
+\pau=500\
+En ik kan de gangnam style en macarena dansen.
+\pau=1000\
+
+{script|speech/command}

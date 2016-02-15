@@ -1,0 +1,8 @@
+D:\Robotutor\SVN\JointChain\bin\Release\JointChain.XML
+D:\Robotutor\SVN\JointChain\bin\Release\JointChain.dll
+D:\Robotutor\SVN\JointChain\bin\Release\JointChain.pdb
+D:\Robotutor\SVN\JointChain\bin\Release\FSharp.PowerPack.dll
+D:\Robotutor\SVN\JointChain\bin\Release\MathProvider.dll
+D:\Robotutor\SVN\JointChain\bin\Release\MathX.dll
+D:\Robotutor\SVN\JointChain\obj\Release\JointChain.dll
+D:\Robotutor\SVN\JointChain\obj\Release\JointChain.pdb

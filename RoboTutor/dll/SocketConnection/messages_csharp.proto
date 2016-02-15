@@ -1,0 +1,56 @@
+package robotutor;
+
+import "google/protobuf/csharp_options.proto";
+
+option (google.protobuf.csharp_file_options).namespace = "SocketConnection";
+option (google.protobuf.csharp_file_options).umbrella_classname = "SocketConnectionProtos";
+
+option optimize_for = SPEED;
+
+message Alive {
+	optional bool respond = 1;
+}
+
+message Slide {
+	required bool  relative = 1;
+	required int32 offset   = 2;
+}
+
+message ShowImage {}
+
+message RobotMessage {
+	optional Alive     alive              = 1;
+	optional Slide     slide              = 2;
+	optional ShowImage show_image         = 3;
+	optional bool      fetch_turningpoint = 4;
+	optional BehaviorCommand     behaviorCmd  = 5;
+}
+
+message Run {
+	optional string script = 1;
+	optional string file   = 2;
+}
+
+message Stop   {}
+message Pause  {}
+message Resume {}
+
+message TurningPointResults {
+	repeated string answers = 1;
+	repeated int32  votes   = 2;
+}
+
+message BehaviorCommand {
+	required string behaviorname = 1;
+    optional string success = 2;
+}
+
+message ClientMessage {
+	optional Run                 run          = 1;
+	optional Stop                stop         = 2;
+	optional Pause               pause        = 3;
+	optional Resume              resume       = 4;
+	optional TurningPointResults turningpoint = 5;
+    optional BehaviorCommand     behaviorCmd  = 6;
+}
+

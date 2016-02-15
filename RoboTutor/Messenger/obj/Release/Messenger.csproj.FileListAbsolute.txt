@@ -1,0 +1,4 @@
+D:\Robotutor\SVN\Messenger\bin\Release\Messenger.dll
+D:\Robotutor\SVN\Messenger\bin\Release\Messenger.pdb
+D:\Robotutor\SVN\Messenger\obj\Release\Messenger.dll
+D:\Robotutor\SVN\Messenger\obj\Release\Messenger.pdb

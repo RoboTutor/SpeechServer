@@ -1,0 +1,4 @@
+{listen|connect}
+Wat wil je dat ik doe?
+{listen|run}
+{listen|close}

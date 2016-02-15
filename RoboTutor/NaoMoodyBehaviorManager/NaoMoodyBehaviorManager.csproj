@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D5613A8-D4FE-48CC-99FC-26AAADF6CA81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NaoMoodyBehaviorManager</RootNamespace>
+    <AssemblyName>NaoMoodyBehaviorManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="FSharp.PowerPack, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a19089b1c74d0809, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseBehaviorProfile.cs" />
+    <Compile Include="BehProfHeadRandomScan.cs" />
+    <Compile Include="Corpus\BehaviorProfileApplaud.cs" />
+    <Compile Include="Corpus\BehaviorProfileBalance.cs" />
+    <Compile Include="Corpus\BehaviorProfileBow.cs" />
+    <Compile Include="Corpus\BehaviorProfileCapisceRotating.cs" />
+    <Compile Include="Corpus\BehaviorProfileCapise.cs" />
+    <Compile Include="Corpus\BehaviorProfileClap.cs" />
+    <Compile Include="Corpus\BehaviorProfileConvergeHands.cs" />
+    <Compile Include="Corpus\BehaviorProfileConvince.cs" />
+    <Compile Include="Corpus\BehaviorProfileFirst.cs" />
+    <Compile Include="Corpus\BehaviorProfileFirstMe.cs" />
+    <Compile Include="Corpus\BehaviorProfileFromAToB.cs" />
+    <Compile Include="Corpus\BehaviorProfileHandOver.cs" />
+    <Compile Include="Corpus\BehaviorProfileHeadPose.cs" />
+    <Compile Include="Corpus\BehaviorProfileImitGesDown.cs" />
+    <Compile Include="Corpus\BehaviorProfileImitGesUp.cs" />
+    <Compile Include="Corpus\BehaviorProfileIntro.cs" />
+    <Compile Include="Corpus\BehaviorProfileLeanRight.cs" />
+    <Compile Include="BehProfLegRandomMove.cs" />
+    <Compile Include="Corpus\BehaviorProfileLookAround.cs" />
+    <Compile Include="Corpus\BehaviorProfileLRUD.cs" />
+    <Compile Include="Corpus\BehaviorProfileMe.cs" />
+    <Compile Include="Corpus\BehaviorProfileMeAndYou.cs" />
+    <Compile Include="Corpus\BehaviorProfileMotivate.cs" />
+    <Compile Include="Corpus\BehaviorProfileNod.cs" />
+    <Compile Include="Corpus\BehaviorProfileNoShakeHead.cs" />
+    <Compile Include="Corpus\BehaviorProfileOneTheOther.cs" />
+    <Compile Include="Corpus\BehaviorProfilePhotoHeadPose.cs" />
+    <Compile Include="Corpus\BehaviorProfilePointing.cs" />
+    <Compile Include="Corpus\BehaviorProfilePointingOmni.cs" />
+    <Compile Include="Corpus\BehaviorProfilePressDown.cs" />
+    <Compile Include="Corpus\BehaviorProfilePropose.cs" />
+    <Compile Include="Corpus\BehaviorProfilePushAside.cs" />
+    <Compile Include="Corpus\BehaviorProfileRArmDOF.cs" />
+    <Compile Include="Corpus\BehaviorProfileRArmDOFOneByOne.cs" />
+    <Compile Include="Corpus\BehaviorProfileShowBiceps.cs" />
+    <Compile Include="Corpus\BehaviorProfileShowBody.cs" />
+    <Compile Include="Corpus\BehaviorProfileShowMic.cs" />
+    <Compile Include="Corpus\BehaviorProfileShowSide.cs" />
+    <Compile Include="Corpus\BehaviorProfileShowSonars.cs" />
+    <Compile Include="Corpus\BehaviorProfileSmallBow.cs" />
+    <Compile Include="Corpus\BehaviorProfileSpread.cs" />
+    <Compile Include="Corpus\BehaviorProfileStandHead.cs" />
+    <Compile Include="Corpus\BehaviorProfileState.cs" />
+    <Compile Include="BehaviorProfileTemplate.cs" />
+    <Compile Include="Corpus\BehaviorProfileThink.cs" />
+    <Compile Include="Corpus\BehaviorProfileTiny.cs" />
+    <Compile Include="Corpus\BehaviorProfileTwinkle.cs" />
+    <Compile Include="Corpus\BehaviorProfileWaving.cs" />
+    <Compile Include="Corpus\BehaviorProfileWeigh.cs" />
+    <Compile Include="Corpus\BehaviorProfileYouAndMe.cs" />
+    <Compile Include="IBehaviorProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConnectorNao\NaoConnector.csproj">
+      <Project>{4D4AE967-E981-46D0-96D5-4459BA627FCC}</Project>
+      <Name>NaoConnector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JointChain\NaoJointChain.fsproj">
+      <Project>{0FA04309-578D-4B6B-A5BB-16F3E6687C54}</Project>
+      <Name>NaoJointChain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

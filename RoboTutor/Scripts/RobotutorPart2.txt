@@ -1,0 +1,490 @@
+###################################################
+# NB:
+# \pau=\ for delaying for a long time does not work; use multiple \pau=\ and keep each less than 10 seconds.
+# One behavior one Text rule: multiple behaviors will not be bond with text.
+###################################################
+
+# Initialize voice: speed, pitch/tone
+#\rst\
+\rspd=95\
+#\vct=100\
+# Enable LegRandomMove
+{idle_leg}
+#{idle_head}
+
+# initial standing pose
+{behavior|StandHead}
+\pau=3000\
+
+
+
+# Slide 1.
+{behavior|HelloEverybody}
+Hello everyone! \pau=500\ Welcome back!
+\pau=200\
+
+{behavior|PushAsideBoth}
+In the first part, I introduced some basic concepts of robots, and sensors.
+{behavior|FirstMe}
+Now I will talk about effectors, programming, and applications.
+
+
+
+# slide 2 Processor
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|YouAndMe}
+Sensors give you, and me, a lot of information about our surroundings, 
+{behavior|State}
+but we need to determine, what we do with this information. I think the rules that
+{behavior|FromAToB} 
+map input,
+\pau=500\
+to output, have been discussed previously during the course. 
+{behavior|Propose}
+In a robot, the hardware that does this mapping is called, the processing unit.
+{behavior|Convince}
+Processing units are helpful for determining states in the world, 
+for example, my exact location and how I should navigate through a map,
+{behavior|FromAToB}
+to get from one point to another.
+\pau=500\
+{behavior|RotatingCapisce}
+Processing units also help me understand, the images I receive from my cameras, to detect things like faces and objects nearby.
+Or for example sensor fusion, which combines the input
+{behavior|FromAToB}
+from a gyroscope, accelerometer and compass, into a single and better orientation value. 
+which helps me determine where I am, and how I am moving.
+
+
+
+# slide 3 Effectors
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+When the processing unit has
+{behavior|OneTheOther}
+processed the input, a decision follows, which would usually mean.
+{behavior|Clap}
+I have to move parts of my body. This is done using effectors.
+{behavior|Propose}
+{behavior|Balance}
+An effector is basically anything to manipulate our world, for example my arms, my legs, and my speakers, etcetera.
+{behavior|PushAsideBoth}
+Let's have a short look at what I can actually do with effectors.
+
+
+
+# Slide 4 Head
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|HandOver}
+A head is probably, the most important part for humanoids. For me, despite that many important electronic components,
+{behavior|ShowMic}
+ are inside my head. its movements also help me 
+{behavior|LookAround}
+to track objects that interest me.
+My gaze direction also indicates my attention.
+Of course, head movements are essential to some gestures like
+{behavior|Nod}
+nodding and shaking head, and to dance.
+The lights in my eyes are also useful, 
+# show blue, red
+{behavior|Twinkle}
+for showing emotions.
+\pau=2000\
+
+
+
+# Slide 5 arms
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Me}
+One of my important effectors, is my arm. 
+{behavior|Capisce}
+Although, I only have three fingers for each hand, I can still grab objects. 
+{behavior|RotatingCapisce}
+I can use my arms to make gestures, as well.
+When I need to stand up, from a sitting posture, my arms also help me to support my body.
+{behavior|Clap}
+And, arms are necessary for entertainment like soccer, dance, and games.
+
+
+
+# Slide 6 leg
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Propose}
+Legs are a representative feature for biped robots like me. 
+
+{behavior|LeanRight}
+They support our body, enable us to stand, walk, and jump.
+
+{behavior|Propose}
+Legs have advantages in walking over complex terrains, where wheels can be easily stuck, 
+{behavior|HandOver}
+for example, ruins caused by disasters.
+
+{behavior|Spread}
+However, compared to wheels, it is not easy to control my move accurately. 
+This is caused by the backlash of my joints, and the slippage of my feet.
+{behavior|HandOver}
+As you might notice, I have been already standing at 
+{behavior|OneTheOther}
+a different position, from where I started the lecture, although my leg movements were small.
+{behavior|SpreadBoth}
+As a result, it is difficult to control me to walk in a straight line.
+
+{behavior|PushAsideLeft}
+Legs are also important for entertainment.
+
+Look at me! I am going to show you how I can stand on one leg, and, kick.
+
+{behavior|Kick}
+\pau=11000\
+
+{behavior|StandHead}
+\pau=500\
+
+If my friends were here, 
+{behavior|Applaud}
+I could even play soccer or dance with them.
+\pau=500\
+
+
+
+# Slide 7 - ZMP Support Polygon
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Balance}
+Balence is a key aspect to the locomotion of bi-ped robots.
+{behavior|MeAndYou}
+Let me introduce to you, some basic concepts of controlling my balance.
+
+{behavior|Capisce}
+The Zero Moment Point, Z M P, is the point on the robot feets, where the moments acting on the robot
+{behavior|Weigh}
+are balanced by an opposing moment from the ground. 
+{behavior|State}
+If the Z M P, is at the edge of the foot area, or beyond it, the foot will tip over, and likely fall. 
+
+
+{behavior|HandOver}
+To be simple, the support polygon of a robot is, the convex hull of the footprints on the ground.
+
+{behavior|ConvergeHands}
+Under zero acceleration conditions, to keep the Z M P within the foot area, the center of mass of the robot body, 
+should be kept inside the support polygon,
+{behavior|Capisce}
+and if so, the robot will not rotate about the edges of the foot,
+{behavior|ShowBody}
+and will remain upright.
+\pau=1000\
+
+
+
+# Slide 8 - ZMP Support Polygon
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+In this slide, I will talk about balance during walking.
+{behavior|Propose}
+When I am walking, I select the next step very carefully.
+to guarantee the Z M P of my body always inside the support polygon. 
+
+Let me show you how I walk. Please look at me.
+{behavior|Walk}
+
+\pau=2000\
+
+{behavior|Capisce}
+As you can see, my steps are small, and unlike a human.
+\pau=1500\
+
+{behavior|HandOverLeft}
+More sophisticated walking style requires more complex algorithms, to keep the Z M P inside the support polygon.
+{behavior|ProposeLeft}
+One method is to model the locomotion of each leg, as an inverted pendulum cart, since most of the mass, 
+{behavior|ShowBody}
+aggregates in my upper body.
+\pau=800\
+{behavior|Capisce}
+A widely used model is linear inverted pendulum mode, which constrains the motion of my body to the X Y plane.
+{behavior|ConvergeHands}
+Achieving position control of legs while making sure that, the Z M P is inside the foot area,
+{behavior|SpreadBoth}
+is a whole research field on its own, so I will not provide further details in this lecture.
+
+# summary
+{behavior|Clap}
+This is just what I can do with my effectors though, there are even robots that can juggle, or play ping pong.
+{behavior|No}
+but I can not react fast enough.
+{behavior|PushAsideBoth}
+As you see, motors are not the only effectors that exist, but for me and most robots,
+{behavior|ShowBiceps}
+they are the most important ones, as they are essential to the movements of my body.
+
+
+
+# Slide 9 - DOF
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|YouAndMe}
+Your arms and mine too, are limited by what we call degrees of freedom.
+{behavior|Capisce}
+A free object has six degrees of freedom, three for moving, and three for rotation.
+{behavior|Convince}
+A linkage, like my arm, is formed by several bars connected by joints.
+{behavior|HandOverLeft}
+Joitns reduce degrees of freedom, because the bars cannot move freely anymore. 
+They can only rotate around the joints. Take your wrist for example.
+{behavior|LRUD}
+You can rotate it up and down, left and right, and twist it, giving it three degrees of freedom.
+{behavior|No}
+My arm has even less degrees of freedom, because only some joints can rotate around three axes.
+{behavior|CapisceLeft}
+Some of my joints, like the three fingers of my hand, are controlled 
+{behavior|Tiny}
+by only one motor, so it only has one degree of freedom.
+
+
+
+# Slide 10 - Quiz DOF
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Motivate}
+Let's see if you now understood this concept.
+{behavior|PointForward}
+How many degrees of freedom does my right arm have? Now, look at me carefully.
+
+# Show
+{behavior|ShowArmJoints}
+\pau=20000\
+
+#
+{behavior|HandOver}
+Now, I give you 15 seconds to answer, so be quick.
+
+{behavior|LookAround}
+
+# Start timer
+{slide}
+# Wait for 15 seconds.
+\pau=15000\
+
+# Get results.
+{slide}
+\pau=2000\
+
+# Hackfix to trigger the turningpoint choice command.
+Hum, let's see.
+{quiz| This is not true. | Yes, very good! | Not exactly. | Not exactly. | Well it seems there is no conclusive answer. I do admit, it is a difficult subject. }
+
+# Show correct answer.
+{slide}
+\pau=500\
+
+{behavior|Spread}
+The correct answer was B.
+
+
+# Slide 11 DOF answer
+{slide}
+\pau=500\
+
+# better words?
+{behavior|ShowArmJointsOneByOne}
+Since my shoulder, can pitch, and, roll. 
+\pau=400\
+my elbow, can roll, 
+\pau=500\
+and yaw. 
+\pau=1000\
+my wrist, can only yaw. 
+\pau=2000\
+and I have told you my fingers only have one degree.
+\pau=2000\
+{behavior|State}
+This gives it a total of 6 degrees of freedom.
+\pau=500\
+
+
+
+# Slide 12 Programming
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Clap}
+Now we have seen what I can do, with my sensors and effectors, 
+{behavior|Me}
+let me give you a brief introduction to how you can program me.
+{behavior|SpreadBoth}
+Choregraphe is an excellent graph-flow based programming tool shipped with me. 
+{behavior|FromAToB}
+You can drag boxes from libraries, and connect them to create your projects, as you can see on the right of the slide.
+{behavior|Propose}
+This type of programming is also called visual programming.
+{behavior|OneTheOther}
+Sometimes, you may need to change the code behind the boxes, or create your own boxes.
+{behavior|HandOver}
+You can use Python to code these boxes. Projects can be executed on a computer, and on the robot.
+{behavior|PointRight}
+Sometimes, actions you create might cause me to fall down. 
+It is therefore very useful that, there are also simulators available for a try-out.
+
+  
+
+# Slide 13 
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|PushAsideBoth}
+A-P-I's to the A L modules, provided with Nao Qi framework, are available for customized applications.
+
+{behavior|State}
+This slide shows an example, of text to speech module.
+
+{behavior|HandOver}
+You can also use, various programming languages, including c plus plus, java,
+
+# Slide 14
+{slide}
+\pau=500\
+
+c sharp, and even matlab to create your applications. They are all supported by our SDK libraries now.
+{behavior|Propose}
+However, only c plus plus and python, are supported by the Linux system on the robot.
+
+
+
+# Slide 15 - Quiz Programming Language
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+# question
+{behavior|Motivate}
+Let's see if you are now clear about the programming of a NAO.
+{behavior|HandOverLeft}
+Which languages are supported on the robot? 
+# 
+{behavior|Convince}
+Now, I give you again 10 seconds to answer, so be quick.
+
+
+# Start timer
+{slide}
+# Wait for 10 seconds.
+{behavior|LookAround}
+\pau=10000\
+
+# Get results.
+{slide}
+\pau=2000\
+
+# Hackfix to trigger the turningpoint choice command.
+Hum, let's see.
+{quiz| This is not true. | Not exactly. | Not exactly. | Yes, very good! | Well it seems there is no conclusive answer. I do admit, it is a difficult subject. }
+
+# Show correct answer.
+{slide}
+\pau=500\
+
+The correct answer was D.
+{behavior|State}
+Only the c plus plus and python are supported by the linux system on the robot.
+
+
+
+# Slide 16
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Me}
+Finally, I will briefly introduce the Robo Tutor project. 
+\pau=500\
+
+{behavior|First}
+Thanks to the script engine, that is part of my system,
+{behavior|SpreadBoth}
+many different scenarios can be designed for me to perform.
+
+{behavior|YouAndMe}
+Right now, I am a robot tutor, teaching you about robotics. However, I can also act in a theater, using the same system.
+
+{behavior|Spread}
+As you can see on the left bottom of the slide, the script is very intuitive.
+
+{behavior|Propose}
+With such a script, you can easily orchestrate my speech, actions, slide control, et cetera.
+{behavior|SpreadBoth}
+But don't forget, I also need behaviors that need to be created, 
+{behavior|Weigh}
+and synchronized with my speech, and the other actions that I perform. 
+{behavior|ProposeLeft}
+There are several concurrent threads, that need to be managed!
+
+{behavior|OneTheOther}
+Scripts can be stored both on a computer or in my system, 
+{behavior|Me}
+and I can act using a script in my system, 
+{behavior|PushAside}
+without another computer.
+
+However, at least for now, a computer 
+{behavior|Propose}
+is required for the slides and quizzes. 
+{behavior|Clap}
+Thanks to the turning point technology, I can check,
+{behavior|YouAndMe}
+how well you understood the content I just taught, 
+{behavior|HandOver}
+and provide more explanation on things, that were not clear.
+
+{behavior|State}
+My voice can also be transferred to a computer, and amplified, using the classroom speakers.
+
+{behavior|ShowBody}
+I am still growing. More and more functions will be added to me.
+{behavior|Applaud}
+Plans are for me to interact more and, for example, answer open questions that students ask directly, using a question-answer system.
+{behavior|YouAndMe}
+If you are interested in this project, please contact my boss, Koen Hindriks.
+
+
+
+# Last Slide 17
+{behavior|Twinkle}
+{slide}
+\pau=1000\
+
+{behavior|Spread}
+Alright, that was all.
+
+{behavior|Bow}
+Thank you for your attention and I hope you enjoyed my lecture.
+\pau=1500\
+{behavior|HelloEverybody}
+I will now let the professor continue with his lecture. Goodbye!
+
+

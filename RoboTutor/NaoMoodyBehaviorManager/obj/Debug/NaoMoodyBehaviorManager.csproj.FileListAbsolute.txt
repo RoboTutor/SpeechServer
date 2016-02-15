@@ -1,0 +1,15 @@
+D:\Robotutor\SVN\bin\Debug\NaoMoodyBehaviorManager.dll
+D:\Robotutor\SVN\bin\Debug\NaoMoodyBehaviorManager.pdb
+D:\Robotutor\SVN\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.csprojResolveAssemblyReference.cache
+D:\Robotutor\SVN\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.dll
+D:\Robotutor\SVN\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.pdb
+D:\test\Robotutor\bin\Debug\NaoMoodyBehaviorManager.dll
+D:\test\Robotutor\bin\Debug\NaoMoodyBehaviorManager.pdb
+D:\test\Robotutor\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.csprojResolveAssemblyReference.cache
+D:\test\Robotutor\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.dll
+D:\test\Robotutor\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.pdb
+F:\NAO\RT\bin\Debug\NaoMoodyBehaviorManager.dll
+F:\NAO\RT\bin\Debug\NaoMoodyBehaviorManager.pdb
+F:\NAO\RT\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.csprojResolveAssemblyReference.cache
+F:\NAO\RT\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.dll
+F:\NAO\RT\NaoMoodyBehaviorManager\obj\Debug\NaoMoodyBehaviorManager.pdb

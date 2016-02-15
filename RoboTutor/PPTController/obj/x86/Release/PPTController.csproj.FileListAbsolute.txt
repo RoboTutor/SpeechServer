@@ -1,0 +1,12 @@
+D:\Robotutor\SVN\PPTController\bin\Release\PPTController.dll
+D:\Robotutor\SVN\PPTController\bin\Release\PPTController.pdb
+D:\Robotutor\SVN\PPTController\bin\Release\Messenger.dll
+D:\Robotutor\SVN\PPTController\bin\Release\Utilities.dll
+D:\Robotutor\SVN\PPTController\bin\Release\Messenger.pdb
+D:\Robotutor\SVN\PPTController\obj\x86\Release\PPTController.csprojResolveAssemblyReference.cache
+D:\Robotutor\SVN\PPTController\obj\x86\Release\PPTController.SlidesController.resources
+D:\Robotutor\SVN\PPTController\obj\x86\Release\PPTController.PPTControllerForm.resources
+D:\Robotutor\SVN\PPTController\obj\x86\Release\PPTController.Properties.Resources.resources
+D:\Robotutor\SVN\PPTController\obj\x86\Release\PPTController.csproj.GenerateResource.Cache
+D:\Robotutor\SVN\PPTController\obj\x86\Release\PPTController.dll
+D:\Robotutor\SVN\PPTController\obj\x86\Release\PPTController.pdb

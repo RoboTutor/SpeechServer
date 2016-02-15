@@ -1,0 +1,11 @@
+<ScriptInterpreter>
+    <ConfigExpressions>
+        <expr>{idle_leg}</expr>
+        <expr>{idle_head}</expr>
+        <expr>{idle_eye}</expr>
+        <expr>{text_senti_enabled}</expr>
+        <expr>{constant_head}</expr>
+        <expr>{forwardlooking_head}</expr>
+        <expr>{freelooking_head}</expr>
+    </ConfigExpressions>
+</ScriptInterpreter>

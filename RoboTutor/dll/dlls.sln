@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEFastColoredTextBox", "FastColoredTextBox\SEFastColoredTextBox.csproj", "{6DD14A85-CCFC-4774-BD26-0F5772512319}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MathX", "MathX\MathX.fsproj", "{05F833A5-F56D-4BC4-BFE1-36887F6D86A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketConnector", "SocketConnection\SocketConnector.csproj", "{5078B338-7F5D-44D0-A4BE-D5B3940170D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{6860D45A-E778-47A2-B04C-98D21E93B967}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DD14A85-CCFC-4774-BD26-0F5772512319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD14A85-CCFC-4774-BD26-0F5772512319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD14A85-CCFC-4774-BD26-0F5772512319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD14A85-CCFC-4774-BD26-0F5772512319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F833A5-F56D-4BC4-BFE1-36887F6D86A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F833A5-F56D-4BC4-BFE1-36887F6D86A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F833A5-F56D-4BC4-BFE1-36887F6D86A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F833A5-F56D-4BC4-BFE1-36887F6D86A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5078B338-7F5D-44D0-A4BE-D5B3940170D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5078B338-7F5D-44D0-A4BE-D5B3940170D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5078B338-7F5D-44D0-A4BE-D5B3940170D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5078B338-7F5D-44D0-A4BE-D5B3940170D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6860D45A-E778-47A2-B04C-98D21E93B967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6860D45A-E778-47A2-B04C-98D21E93B967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6860D45A-E778-47A2-B04C-98D21E93B967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6860D45A-E778-47A2-B04C-98D21E93B967}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
